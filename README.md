@@ -25,13 +25,13 @@ Once installed, `@import` into your project's Sass file in its Objects layer:
 
 These flags are available and, if needed, should be set to `true` prior to importing the module:
 
-  $actionable          
+  $actionable 
   $actionable--select  
   $actionable--action  
-  $actionable--disabled
-  $actionable--small
-  $actionable--large
-  $actionable--huge
+  $actionable--disabled 
+  $actionable--small 
+  $actionable--large 
+  $actionable--huge 
 
 ## Options
 
