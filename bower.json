@@ -1,5 +1,5 @@
 {
-  "name": "px-actionable-text-icons",
+  "name": "px-actionable-text-icons-design",
   "version": "0.0.1",
   "authors": [
     "General Electric"
@@ -13,7 +13,7 @@
     "actionable icons"
   ],
   "license": "Apache 2",
-  "homepage": "https://github.com/PredixDev/px-actionable-text-icons.git",
+  "homepage": "https://github.com/PredixDev/px-actionable-text-icons-design.git",
   "private": true,
   "ignore": [
     "**/.*",

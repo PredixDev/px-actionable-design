@@ -15,11 +15,11 @@ Px's Text &#38; Icons module depends on two other Px modules:
 
 Install this module and its dependencies using bower:
 
-    bower install --save https://github.com/PredixDev/px-actionable-text-icons.git
+    bower install --save https://github.com/PredixDev/px-actionable-text-icons-design.git
 
 Once installed, `@import` into your project's Sass file in its Objects layer:
 
-    @import "px-actionable-text-icons/_objects.actionable.scss";
+    @import "px-actionable-text-icons-design/_objects.actionable.scss";
 
 ## Usage
 
