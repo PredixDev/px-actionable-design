@@ -1,11 +1,11 @@
 {
   "name": "px-actionable-text-icons",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "authors": [
     "General Electric"
   ],
   "description": "Actionable Text and Icon styles for Predix Experience",
-  "main": "_objects.buttons.scss",
+  "main": "_objects.actionable.scss",
   "keywords": [
     "px",
     "sass",

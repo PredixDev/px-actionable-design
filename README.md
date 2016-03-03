@@ -19,55 +19,23 @@ Install this module and its dependencies using bower:
 
 Once installed, `@import` into your project's Sass file in its Objects layer:
 
-    @import "px-buttons-design/_objects.buttons.scss";
+    @import "px-actionable-text-icons/_objects.actionable.scss";
 
 ## Usage
 
 These flags are available and, if needed, should be set to `true` prior to importing the module:
 
-    $inuit-enable-btn--small
-    $inuit-enable-btn--large
-    $inuit-enable-btn--huge
-    $inuit-enable-btn--full
-    $inuit-enable-btn--primary
-    $inuit-enable-btn--tertiary
-    $inuit-enable-btn--disabled
-    $inuit-enable-btn--icon
-    $inuit-enable-btn--bare
-    $inuit-enable-btn--bare-primary
-    $inuit-enable-btn--bare-select
-    $inuit-enable-btn--bare-disabled
-
-The following variables are available for use in the module:
-
-    $inuit-btn-color
-    $inuit-btn-background
-    $inuit-btn-background--hover
-    $inuit-btn-background--pressed
-    $inuit-btn-border-color
-    $inuit-btn-border-color--hover
-    $inuit-btn-border-color--pressed
-    $inuit-btn-shadow
-    $inuit-btn-shadow--light
-    $inuit-btn-primary-color
-    $inuit-btn-primary-background
-    $inuit-btn-primary-background--hover
-    $inuit-btn-primary-background--pressed
-    $inuit-btn-primary-border-color
-    $inuit-btn-tertiary-color
-    $inuit-btn-tertiary-background
-    $inuit-btn-tertiary-background--hover
-    $inuit-btn-tertiary-background--pressed
-    $inuit-btn-disabled-color
-    $inuit-btn-disabled-background
-    $inuit-btn-disabled-border-color
+  $actionable          
+  $actionable--select  
+  $actionable--action  
+  $actionable--disabled
+  $actionable--small
+  $actionable--large
+  $actionable--huge
 
 ## Options
 
 These classes are available if the variable flags listed above are set to `true`:
 
-* `btn--[small|large|huge]`: Small, large or huge buttons
-* `btn--[primary|tertiary|disabled]`: Primary, tertiary, or disabled buttons
-* `btn--full`: Full width buttons
-* `btn--icon`: Circular button for icons
-* `btn--bare[primary|select|disabled]`: Text and Icon Buttons
+* `actionable--[small|large|huge]`: Small, large or huge Actionable Text &#38; Icons
+* `actionable--[select|action|disabled]`: select, action, or disabled Actionable Text &#38; Icons
