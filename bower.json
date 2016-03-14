@@ -1,6 +1,6 @@
 {
   "name": "px-actionable-text-icons-design",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "authors": [
     "General Electric"
   ],
@@ -14,7 +14,7 @@
   ],
   "license": "Apache 2",
   "homepage": "https://github.com/PredixDev/px-actionable-text-icons-design.git",
-  "private": true,
+  "private": false,
   "ignore": [
     "**/.*",
     "node_modules",
