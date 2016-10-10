@@ -3,30 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>px-toggle-design Demo</title>
+  <title>px-actionable-text-icons-design Demo</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
   <!-- Boilerplate: Import Libraries -->
   <script src="../webcomponentsjs/webcomponents-lite.js"></script>
   <link rel="import" href="../px-theme/px-theme.html" />
   <link rel="import" href="../px-sass-doc/px-sass-doc.html" />
+  <link rel="import" href="../polymer-font-awesome/polymer-font-awesome.html" />
 
   <!-- 0: Import Module Styles -->
   <link rel="stylesheet" type="text/css" href="css/px-actionable-text-icons-design-demo.css" />
 </head>
+
 <body>
 <template id="just-for-demo" is="dom-bind">
 
 <!-- 1: Describe Module -->
 <px-sass-doc
-  module-name="px-toggle-design"
-  description="Toggle is a simple on/off switch. It's created with CSS applied to a checkbox and label. Use it to create simple UI elements that enable and disable things."
+  module-name="px-actionable-text-icons-design"
+  description="Actionable text allows the user to initiate an action associated to the text string. Actionable text can describe the action the user will take or describe the content of the object. Actionable text describing an object will allow the user to navigate to another area of the application or launch a separate window/tab.
+              The visual style of actionable text will be dependent on the content type. The overuse of default actionable text can decrease hierarchy. Action can be used for items where you want to provide actions that are not primary to the view or component. Action text is discoverable through a hover state."
   layer="objects"
   sassdoc-path="sassdoc.json"
   dependencies='[
     "https://github.com/PredixDev/px-colors-design",
-    "https://github.com/PredixDev/px-defaults-design",
-    "https://github.com/PredixDev/px-helpers-design"
+    "https://github.com/PredixDev/px-defaults-design"
   ]'
   selected-options="{{selectedOptions}}">
 
@@ -42,96 +44,62 @@
   ]'
   default-choice="regular (default)">
 </px-sass-doc-option>
+<px-sass-doc-option
+  option-name="Type"
+  choose-with="dropdown"
+  choices='[
+    "default",
+    "select",
+    "action"
+  ]'
+  default-choice="default">
+</px-sass-doc-option>
+<px-sass-doc-option
+  option-name="Disabled"
+  choose-with="boolean"
+  default-choice="false">
+</px-sass-doc-option>
 
 <!-- 3: Make HTML Demo -->
-<section data-slot="htmlDemo">
-<input id="exampleToggle" class$="{{inputClasses}}" type="checkbox" />
-<label for="exampleToggle" class$="{{labelClasses}}"></label>
+<section data-slot="demoHTML">
+<span class$="{{cssClasses}}">Actionable Text</span>
+<p class$="{{cssClasses}}">
+  <i class="fa fa-area-chart"></i>
+</p>
 </section>
 
 <!-- 4: Set Import Slot -->
-<section data-slot="importDemo">
+<section data-slot="import">
 {{importCode}}
 </section>
 
 <!-- 5: Set Usage HTML -->
-<section data-slot="usageHTML">
-<!-- Default toggle -->
-<input id="toggle2" class="toggle__input" type="checkbox">
-<label for="toggle2" class="toggle__label"></label>
-<!-- Small toggle -->
-<input id="toggle3" class="toggle__input toggle__input--small" type="checkbox">
-<label for="toggle3" class="toggle__label toggle__label--small"></label>
-<!-- Large toggle -->
-<input id="toggle4" class="toggle__input toggle__input--large" type="checkbox">
-<label for="toggle4" class="toggle__label toggle__label--large"></label>
-<!-- Huge toggle -->
-<input id="toggle5" class="toggle__input toggle__input--huge" type="checkbox">
-<label for="toggle5" class="toggle__label toggle__label--huge"></label>
-</section>
-
-<!-- 5: Set Usage Info -->
 <section data-slot="usage">
-Toggles are just fancy checkboxes. After you import the toggle library, you can add classes to an `<input>` tag and `<label>` tag to create your toggle element. Toggles look like this:
-
-<input id="simpleToggle" class="toggle__input" type="checkbox">
-<label for="simpleToggle" class="toggle__label"></label>
-
-You can create the toggle above with the following code:
-
 ```
-<!-- HTML and CSS get the job done, no JavaScript required -->
-<input id="simpleToggle" class="toggle__input" type="checkbox">
-<label for="simpleToggle" class="toggle__label"></label>
-```
+<!-- Default Actionable Text & Icon -->
+<span class="actionable">…</span>
+<span class="actionable">
+  <i class="fa fa-…"></i>
+</span>
 
-### Important things to remember
+<!-- Small -->
+<span class="actionable actionable--small">…</span>
 
-#### Order matters (input before label)
+<!-- Large -->
+<span class="actionable actionable--large">…</span>
 
-Your `<input>` tag *must* come right before you `<label>` tag, exactly as the code appears in the example above. The toggle relies on CSS's <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_selectors">adjacent sibling selector</a>. If you don't place the tags in the right order, the toggle won't work.
+<!-- Huge -->
+<span class="actionable actionable--huge">…</span>
 
-#### Match your input `id` and label `for`
+<!-- Action -->
+<span class="actionable actionable--action">…</span>
 
-Your `id` attribute on your `<input>` tag should match the `for` attribute on your `<label>` tag to keep them in sync:
+<!-- Select -->
+<span class="actionable actionable--select">…</span>
 
-```
-<!-- Input and label must have the same ID -->
-<input id="SAME_VALUE" class="toggle__input" type="checkbox">
-<label for="SAME_VALUE" class="toggle__label"></label>
-```
+<!-- Disabled -->
+<span class="actionable actionable--disabled">…</span>
 
-#### Keep classes in sync
-
-Both the `<input>` and `<label>` tags should have the same modifiers as their sibling. For example, if you're using a small toggle, make sure you apply the `toggle__input--small` class and the `toggle__label--small` class like the example below:
-
-
-```
-<!-- Small modifier on both input and label -->
-<input id="toggle3" class="toggle__input toggle__input--small" type="checkbox">
-<label for="toggle3" class="toggle__label toggle__label--small"></label>
-```
-
-### All the possible toggles
-
-Here are all the possible toggles you could use. Remember, you'll need to set the correct flags before importing the toggle module (see instructions above):
-
-```
-<!-- Small toggle -->
-<input id="small" class="toggle__input toggle__input--small" type="checkbox">
-<label for="small" class="toggle__label toggle__label--small"></label>
-
-<!-- Regular toggle -->
-<input id="regular" class="toggle__input" type="checkbox">
-<label for="regular" class="toggle__label"></label>
-
-<!-- Large toggle -->
-<input id="large" class="toggle__input toggle__input--large" type="checkbox">
-<label for="large" class="toggle__label toggle__label--large"></label>
-
-<!-- Huge toggle -->
-<input id="huge" class="toggle__input toggle__input--huge" type="checkbox">
-<label for="huge" class="toggle__label toggle__label--huge"></label>
 ```
 </section>
 
@@ -143,39 +111,29 @@ Here are all the possible toggles you could use. Remember, you'll need to set th
   var template = document.querySelector('template[is=dom-bind]');
 
   document.addEventListener('px-sass-doc-options-updated', function(evt) {
-    template.inputClasses = template._inputClasses();
-    template.labelClasses = template._labelClasses();
+    template.cssClasses = template._calcCssClasses();
     template.importCode = template._importCode();
   });
 
-  template._inputClasses = function() {
+  template._calcCssClasses = function() {
     var opts = template.selectedOptions || {}, strings = [];
 
-    if (opts.Size === "small")    strings.push("toggle__input--small");
-    if (opts.Size === "large")    strings.push("toggle__input--large");
-    if (opts.Size === "huge")     strings.push("toggle__input--huge");
+    if (opts.Size === "small")    strings.push("actionable--small");
+    if (opts.Size === "large")    strings.push("actionable--large");
+    if (opts.Size === "huge")     strings.push("actionable--huge");
 
-    return ("toggle__input " + strings.join(" ")).trim();
-  };
+    if (opts.Type === "select")    strings.push("actionable--select");
+    if (opts.Type === "action")    strings.push("actionable--action");
 
-  template._labelClasses = function() {
-    var opts = template.selectedOptions || {}, strings = [];
+    if (opts.Disabled === true)    strings.push("actionable--disabled");
 
-    if (opts.Size === "small")    strings.push("toggle__label--small");
-    if (opts.Size === "large")    strings.push("toggle__label--large");
-    if (opts.Size === "huge")     strings.push("toggle__label--huge");
-
-    return ("toggle__label " + strings.join(" ")).trim();
+    return ("actionable " + strings.join(" ")).trim();
   };
 
   template._importCode = function() {
     var opts = template.selectedOptions || {}, strings = [];
 
-    if (opts.Size === "small")    strings.push("inuit-enable-toggle--small : true;");
-    if (opts.Size === "large")    strings.push("inuit-enable-toggle--large : true;");
-    if (opts.Size === "huge")     strings.push("inuit-enable-toggle--huge : true;");
-
-    return (strings.join("\n") + "\n@import 'px-toggle-design/_objects.toggle.scss';").trim();
+    return (strings.join("\n") + "\n@import 'px-actionable-text-icons-design/_objects.actionable.scss';").trim();
   };
 </script>
 </body>

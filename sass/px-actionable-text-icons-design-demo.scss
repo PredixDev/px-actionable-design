@@ -31,6 +31,8 @@ PAGE. IT SHOULD NOT PROVIDE RULES FOR THE MODULE.
 @import "px-flexbox-design/_base.flexbox.scss";
 @import "px-viewport-design/_base.viewport.scss";
 @import "px-typography-design/_base.typography.scss";
+@import "px-iconography-design/_base.iconography.scss";
+
 
 // Objects
 @import "../_objects.actionable.scss";
@@ -39,6 +41,12 @@ PAGE. IT SHOULD NOT PROVIDE RULES FOR THE MODULE.
 
 
 // Trumps
+// $inuit-enable-margins
+$inuit-enable-margins--tiny : true;
+$inuit-enable-margins--small : true;
+$inuit-enable-margins--large : true;
+$inuit-enable-margins--huge : true;
+@import "px-spacing-design/_trumps.spacing.scss";
 @import "inuit-clearfix/_trumps.clearfix.scss";
 @import "px-spacing-responsive-design/_trumps.spacing-responsive.scss";
 @import "px-widths-responsive-design/_trumps.widths-responsive.scss";
