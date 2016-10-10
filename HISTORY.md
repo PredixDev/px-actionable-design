@@ -1,3 +1,7 @@
+v0.0.4
+==========================
+* updated to new demo
+
 v0.0.3
 ==========================
 * updated oss notice and updated readme to point to gh-pages
