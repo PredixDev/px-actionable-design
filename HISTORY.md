@@ -1,3 +1,7 @@
+v0.0.6
+==========================
+* updated bower for demo-sass 
+
 v0.0.5
 ==========================
 * added travis
