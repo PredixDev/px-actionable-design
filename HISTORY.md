@@ -1,3 +1,7 @@
+v0.0.8
+==========================
+* minor updates to text of demo
+
 v0.0.7
 ==========================
 * Updated dependencies
