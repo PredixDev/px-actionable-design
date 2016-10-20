@@ -1,3 +1,7 @@
+v0.1.0
+==========================
+* Update to v0.1.x release branch to fix semver resolution of v0.0.x release branch
+
 v0.0.8
 ==========================
 * minor updates to text of demo
