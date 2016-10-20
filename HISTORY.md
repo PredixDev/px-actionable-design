@@ -1,6 +1,11 @@
+v0.0.7
+==========================
+* Updated dependencies
+* Updated boilerplate files
+
 v0.0.6
 ==========================
-* updated bower for demo-sass 
+* updated bower for demo-sass
 
 v0.0.5
 ==========================
