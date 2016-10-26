@@ -1,1 +1,468 @@
-[]
+[
+    {
+        "description": "Default actionabl text\n",
+        "commentRange": {
+            "start": 96,
+            "end": 96
+        },
+        "context": {
+            "type": "css",
+            "name": ".#",
+            "value": "$inuit-actionable-namespace",
+            "line": {
+                "start": 97,
+                "end": 199
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design"
+        ],
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for selected actionable text and icons\n",
+        "commentRange": {
+            "start": 66,
+            "end": 68
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-actionable--select",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 69,
+                "end": 69
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for action actionable text and icons\n",
+        "commentRange": {
+            "start": 71,
+            "end": 73
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-actionable--action",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 74,
+                "end": 74
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for small actionable text and icons\n",
+        "commentRange": {
+            "start": 76,
+            "end": 78
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-actionable--small",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 79,
+                "end": 79
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for large actionable text and icons\n",
+        "commentRange": {
+            "start": 81,
+            "end": 83
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-actionable--large",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 84,
+                "end": 84
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for huge actionable text and icons\n",
+        "commentRange": {
+            "start": 86,
+            "end": 88
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-actionable--huge",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 89,
+                "end": 89
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Produce CSS for disabled actionable text and icons\n",
+        "commentRange": {
+            "start": 91,
+            "end": 93
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-enable-actionable--disabled",
+            "value": "false",
+            "scope": "default",
+            "line": {
+                "start": 94,
+                "end": 94
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:flag"
+        ],
+        "type": "Boolean [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Prepend value for all generated classes\n",
+        "commentRange": {
+            "start": 10,
+            "end": 12
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-actionable-namespace",
+            "value": "$inuit-namespace",
+            "scope": "default",
+            "line": {
+                "start": 13,
+                "end": 13
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:style"
+        ],
+        "type": "String [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Default Color\n",
+        "commentRange": {
+            "start": 15,
+            "end": 17
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-actionable-color",
+            "value": "$primary-blue",
+            "scope": "default",
+            "line": {
+                "start": 18,
+                "end": 18
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Default Hover Color\n",
+        "commentRange": {
+            "start": 20,
+            "end": 22
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-actionable-color--hover",
+            "value": "$primary-blue-hover",
+            "scope": "default",
+            "line": {
+                "start": 23,
+                "end": 23
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Default Pressed Color\n",
+        "commentRange": {
+            "start": 25,
+            "end": 27
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-actionable-color--pressed",
+            "value": "$primary-blue-pressed",
+            "scope": "default",
+            "line": {
+                "start": 28,
+                "end": 28
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Select Color\n",
+        "commentRange": {
+            "start": 30,
+            "end": 32
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-actionable-select-color",
+            "value": "$select-blue-default",
+            "scope": "default",
+            "line": {
+                "start": 33,
+                "end": 33
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Select Hover Color\n",
+        "commentRange": {
+            "start": 35,
+            "end": 37
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-actionable-select-color--hover",
+            "value": "$select-blue-hover",
+            "scope": "default",
+            "line": {
+                "start": 38,
+                "end": 38
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Select Pressed Color\n",
+        "commentRange": {
+            "start": 40,
+            "end": 42
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-actionable-select-color--pressed",
+            "value": "$select-blue-pressed",
+            "scope": "default",
+            "line": {
+                "start": 43,
+                "end": 43
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Action Color\n",
+        "commentRange": {
+            "start": 45,
+            "end": 47
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-actionable-action-color",
+            "value": "$gray8",
+            "scope": "default",
+            "line": {
+                "start": 48,
+                "end": 48
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Action Hover Color\n",
+        "commentRange": {
+            "start": 50,
+            "end": 52
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-actionable-action-color--hover",
+            "value": "$primary-blue",
+            "scope": "default",
+            "line": {
+                "start": 53,
+                "end": 53
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Action Pressed Color\n",
+        "commentRange": {
+            "start": 55,
+            "end": 57
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-actionable-action-color--pressed",
+            "value": "$primary-blue-pressed",
+            "scope": "default",
+            "line": {
+                "start": 58,
+                "end": 58
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Disabled Color\n",
+        "commentRange": {
+            "start": 60,
+            "end": 62
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-actionable-disabled-color",
+            "value": "$gray4",
+            "scope": "default",
+            "line": {
+                "start": 63,
+                "end": 63
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    }
+]

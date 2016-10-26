@@ -141,6 +141,15 @@ id="test"
   template._importCode = function() {
     var opts = template.selectedOptions || {}, strings = [];
 
+    if (opts.Size === "small")     strings.push("$inuit-enable-actionable--small : true;");
+    if (opts.Size === "large")    strings.push("$inuit-enable-actionable--large : true;");
+    if (opts.Size === "huge")    strings.push("$inuit-enable-actionable--huge : true;");
+
+    if (opts.Type === "select")    strings.push("$inuit-enable-actionable--select : true;");
+    if (opts.Type === "action")    strings.push("$inuit-enable-actionable--action : true;");
+
+    if (opts.Disabled === true)    strings.push("$inuit-enable-actionable--disabled : true;");
+
     return (strings.join("\n") + "\n@import 'px-actionable-text-icons-design/_objects.actionable.scss';").trim();
   };
 

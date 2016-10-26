@@ -1,3 +1,7 @@
+v1.0.0
+==========================
+* converted _objects.actionable.scss to use flags and style variables. 
+
 v0.1.1
 ==========================
 * updated to px-sass-doc#0.2.8, updated to correct version

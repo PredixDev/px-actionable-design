@@ -7,7 +7,95 @@
 @import "px-defaults-design/_settings.defaults.scss";
 @import "px-colors-design/_settings.colors.scss";
 
-.actionable{
+/// Prepend value for all generated classes
+/// @group px-actionable-text-icons-design:variables:style
+/// @type String [default]
+$inuit-actionable-namespace                                : $inuit-namespace !default;
+
+/// Default Color
+/// @group px-actionable-text-icons-design:variables:style
+/// @type Color [default]
+$inuit-actionable-color                                    : $primary-blue !default;
+
+/// Default Hover Color
+/// @group px-actionable-text-icons-design:variables:style
+/// @type Color [default]
+$inuit-actionable-color--hover                             : $primary-blue-hover !default;
+
+/// Default Pressed Color
+/// @group px-actionable-text-icons-design:variables:style
+/// @type Color [default]
+$inuit-actionable-color--pressed                           : $primary-blue-pressed !default;
+
+/// Select Color
+/// @group px-actionable-text-icons-design:variables:style
+/// @type Color [default]
+$inuit-actionable-select-color                             : $select-blue-default !default;
+
+/// Select Hover Color
+/// @group px-actionable-text-icons-design:variables:style
+/// @type Color [default]
+$inuit-actionable-select-color--hover                      : $select-blue-hover !default;
+
+/// Select Pressed Color
+/// @group px-actionable-text-icons-design:variables:style
+/// @type Color [default]
+$inuit-actionable-select-color--pressed                    : $select-blue-pressed !default;
+
+/// Action Color
+/// @group px-actionable-text-icons-design:variables:style
+/// @type Color [default]
+$inuit-actionable-action-color                             : $gray8 !default;
+
+/// Action Hover Color
+/// @group px-actionable-text-icons-design:variables:style
+/// @type Color [default]
+$inuit-actionable-action-color--hover                      : $primary-blue !default;
+
+/// Action Pressed Color
+/// @group px-actionable-text-icons-design:variables:style
+/// @type Color [default]
+$inuit-actionable-action-color--pressed                    : $primary-blue-pressed !default;
+
+/// Disabled Color
+/// @group px-actionable-text-icons-design:variables:style
+/// @type Color [default]
+$inuit-actionable-disabled-color                           : $gray4 !default;
+
+
+/// Produce CSS for selected actionable text and icons
+/// @group px-actionable-text-icons-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-actionable--select                           : false !default;
+
+/// Produce CSS for action actionable text and icons
+/// @group px-actionable-text-icons-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-actionable--action                           : false !default;
+
+/// Produce CSS for small actionable text and icons
+/// @group px-actionable-text-icons-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-actionable--small                            : false !default;
+
+/// Produce CSS for large actionable text and icons
+/// @group px-actionable-text-icons-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-actionable--large                            : false !default;
+
+/// Produce CSS for huge actionable text and icons
+/// @group px-actionable-text-icons-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-actionable--huge                             : false !default;
+
+/// Produce CSS for disabled actionable text and icons
+/// @group px-actionable-text-icons-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-actionable--disabled                         : false !default;
+
+/// Default actionabl text
+.#{$inuit-actionable-namespace}actionable,
+%#{$inuit-actionable-namespace}actionable{
   height: auto;
   border: 0;
   border-radius: 0;
@@ -25,68 +113,86 @@
   &:visited,
   &:active,
   &:focus {
-    color: $primary-blue;
+    color: $inuit-actionable-color;
   }
   &:hover{
-    color: $primary-blue-hover;
+    color: $inuit-actionable-color--hover;
   }
   &:active {
-    color: $primary-blue-pressed;
+    color: $inuit-actionable-color--pressed;
   }
 }
 
-.actionable--select{
-  &,
-  &:link,
-  &:visited,
-  &:active,
-  &:focus {
-    color: $select-blue-default;
-  }
-  &:hover{
-    color: $select-blue-hover;
-  }
-  &:active {
-      color: $select-blue-pressed;
+@if ($inuit-enable-actionable--select  == true) {
+  .#{$inuit-actionable-namespace}actionable--select,
+  %#{$inuit-actionable-namespace}actionable--select{
+    &,
+    &:link,
+    &:visited,
+    &:active,
+    &:focus {
+      color: $inuit-actionable-select-color ;
     }
-  }
-
-.actionable--action{
-  &,
-  &:link,
-  &:visited,
-  &:active,
-  &:focus {
-    color: $gray8;
-  }
-  &:hover{
-    color: $primary-blue;
-  }
-  &:active {
-      color: $primary-blue-pressed;
+    &:hover{
+      color: $inuit-actionable-select-color--hover;
     }
-  }
+    &:active {
+        color: $inuit-actionable-select-color--pressed;
+      }
+    }
+}
 
-.actionable--disabled,
-.actionable[disabled] {
+@if ($inuit-enable-actionable--action  == true) {
+  .#{$inuit-actionable-namespace}actionable--action,
+  %#{$inuit-actionable-namespace}actionable--action{
+    &,
+    &:link,
+    &:visited,
+    &:active,
+    &:focus {
+      color: $inuit-actionable-action-color;
+    }
+    &:hover{
+      color: $inuit-actionable-action-color--hover;
+    }
+    &:active {
+        color: $inuit-actionable-action-color--pressed;
+      }
+  }
+}
+
+@if ($inuit-enable-actionable--disabled == true) {
+  .#{$inuit-actionable-namespace}actionable--disabled,
+  %#{$inuit-actionable-namespace}actionable--disabled,
+  .actionable[disabled] {
     &,
     &:link,
     &:visited,
     &:hover,
     &:active {
       cursor: not-allowed;
-      color: $gray4;
+      color: $inuit-actionable-disabled-color;
     }
   }
-
-.actionable--small {
-   font-size: calculateRem(12px);
 }
 
-.actionable--large {
+@if ($inuit-enable-actionable--small  == true) {
+  .#{$inuit-actionable-namespace}actionable--small,
+  %#{$inuit-actionable-namespace}actionable--small{
+     font-size: calculateRem(12px);
+    }
+}
+
+@if ($inuit-enable-actionable--large  == true) {
+  .#{$inuit-actionable-namespace}actionable--large,
+  %#{$inuit-actionable-namespace}actionable--large{
     font-size: $inuit-base-spacing-unit--large;
+  }
 }
 
-.actionable--huge {
+@if ($inuit-enable-actionable--huge  == true) {
+  .#{$inuit-actionable-namespace}actionable--huge,
+  %#{$inuit-actionable-namespace}actionable--huge{
     font-size: $inuit-base-spacing-unit--huge;
+  }
 }

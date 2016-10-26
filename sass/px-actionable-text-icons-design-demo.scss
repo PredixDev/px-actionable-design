@@ -34,6 +34,12 @@ PAGE. IT SHOULD NOT PROVIDE RULES FOR THE MODULE.
 @import "px-iconography-design/_base.iconography.scss";
 
 // Objects
+$inuit-enable-actionable--select : true;
+$inuit-enable-actionable--action : true;
+$inuit-enable-actionable--small : true;
+$inuit-enable-actionable--large : true;
+$inuit-enable-actionable--huge : true;
+$inuit-enable-actionable--disabled : true;
 @import "../_objects.actionable.scss";
 
 // Component - THINGS TO SHOW YOUR DEMO
