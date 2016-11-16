@@ -1,6 +1,6 @@
 v1.0.0
 ==========================
-* converted _objects.actionable.scss to use flags and style variables. 
+* converted _objects.actionable.scss to use flags, style variables, and css variables. 
 
 v0.1.1
 ==========================

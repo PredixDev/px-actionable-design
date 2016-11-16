@@ -15,52 +15,52 @@ $inuit-actionable-namespace                                : $inuit-namespace !d
 /// Default Color
 /// @group px-actionable-text-icons-design:variables:style
 /// @type Color [default]
-$inuit-actionable-color                                    : $primary-blue !default;
+$inuit-actionable-color                                    : var(--px-actionable-text-color, $primary-blue) !default;
 
 /// Default Hover Color
 /// @group px-actionable-text-icons-design:variables:style
 /// @type Color [default]
-$inuit-actionable-color--hover                             : $primary-blue-hover !default;
+$inuit-actionable-color--hover                             : var(--px-actionable-text-color--hover, $primary-blue-hover)!default;
 
 /// Default Pressed Color
 /// @group px-actionable-text-icons-design:variables:style
 /// @type Color [default]
-$inuit-actionable-color--pressed                           : $primary-blue-pressed !default;
+$inuit-actionable-color--pressed                           : var(--px-actionable-text-color--active, $primary-blue-pressed) !default;
 
 /// Select Color
 /// @group px-actionable-text-icons-design:variables:style
 /// @type Color [default]
-$inuit-actionable-select-color                             : $select-blue-default !default;
+$inuit-actionable-select-color                             : var(--px-selectable-text-color, $select-blue-default) !default;
 
 /// Select Hover Color
 /// @group px-actionable-text-icons-design:variables:style
 /// @type Color [default]
-$inuit-actionable-select-color--hover                      : $select-blue-hover !default;
+$inuit-actionable-select-color--hover                      : var(--px-selectable-text-color--hover, $select-blue-hover) !default;
 
 /// Select Pressed Color
 /// @group px-actionable-text-icons-design:variables:style
 /// @type Color [default]
-$inuit-actionable-select-color--pressed                    : $select-blue-pressed !default;
+$inuit-actionable-select-color--pressed                    : var(--px-selectable-text-color--active, $select-blue-pressed) !default;
 
 /// Action Color
 /// @group px-actionable-text-icons-design:variables:style
 /// @type Color [default]
-$inuit-actionable-action-color                             : $gray8 !default;
+$inuit-actionable-action-color                             : var(--px-actionable-alt-text-color, $gray8) !default;
 
 /// Action Hover Color
 /// @group px-actionable-text-icons-design:variables:style
 /// @type Color [default]
-$inuit-actionable-action-color--hover                      : $primary-blue !default;
+$inuit-actionable-action-color--hover                      : var(--px-actionable-alt-text-color--hover, $primary-blue) !default;
 
 /// Action Pressed Color
 /// @group px-actionable-text-icons-design:variables:style
 /// @type Color [default]
-$inuit-actionable-action-color--pressed                    : $primary-blue-pressed !default;
+$inuit-actionable-action-color--pressed                    : var(--px-actionable-alt-text-color--active, $primary-blue-pressed) !default;
 
 /// Disabled Color
 /// @group px-actionable-text-icons-design:variables:style
 /// @type Color [default]
-$inuit-actionable-disabled-color                           : $gray4 !default;
+$inuit-actionable-disabled-color                           : var(--px-disabled-text-color, $gray4) !default;
 
 /// Produce CSS for selected actionable text and icons
 /// @group px-actionable-text-icons-design:variables:flag
