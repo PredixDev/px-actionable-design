@@ -1,6 +1,6 @@
 {
     "name": "px-actionable-text-icons-design",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "authors": [
         "General Electric"
     ],
@@ -22,7 +22,7 @@
         "tests"
     ],
     "dependencies": {
-        "px-colors-design": "^0.2.20",
+        "px-colors-design": "^0.3.0",
         "px-defaults-design": "^1.0.2"
     },
     "devDependencies": {
