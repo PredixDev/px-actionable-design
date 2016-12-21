@@ -4,27 +4,31 @@ language: node_js
 node_js:
 - stable
 branches:
-  only:
-  - master
+  except:
+  - gh-pages
+addons:
+  firefox: latest
+  apt:
+    sources:
+    - google-chrome
+    packages:
+    - google-chrome-stable
 before_script:
+- npm install web-component-tester
 - npm install bower
 - export PATH=$PWD/node_modules/.bin:$PATH
 - bower install
 script:
+- xvfb-run wct --skip-plugin sauce
+- if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then wct --plugin sauce --skip-plugin
+  local; fi
+after_success:
+- if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then openssl aes-256-cbc -k "$DEPLOYSECRET"
+  -in deploy.enc -out deploy_key -d; fi
 - cd $TRAVIS_BUILD_DIR/scripts
 - chmod 755 ghp.sh
 - "./ghp.sh"
-before_install:
-- if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then openssl aes-256-cbc -k "$password"
-  -in id_rsa.enc -out deploy_key -d; fi
 env:
   global:
-  - secure: Oukdgmte7nIRKrkJUDae23EyUjcT/l9A/3i7AS0OBRMNAAgTyxU7sO95S6QmqB8RkUbouqM3hZzHywmkXo7tPq9E5Ub25SZVD/PnsMGfnlv42naSXyiHnoT1DeRI8oVN2ufKysik5MIMCiUmniykUYy+XP7uz7fQEqXwIZ1rIc1J1UiX2+VDD0Eb6w01qnABwOZuDVTLgevLJQB143Mezc9ItFItpO0l76ImbpwnWZVmJd9tNxwOTip5W+uGHxo64ibaXEzoO0ck0Pev0LJrpzk84LBAKkHxASFuqf4euaB23hPDlEwjKoJhgXQj2SyHCT0VjxWQ8/GxQK9pZyKbbXP1Q/FlHNPEjRMNnfRBbsvbul0GANy7Cb2znEFDbbusuo27RloXzalXzsI0tloDz4n7Tfpg4vZbugY50dNloSC3I/odCndkPFkIBsdOuL/4wbaKxl2VzDHUxd2KtqBzXbwkaHBadzGrjt9scqnUnSV3l3tkgPOo/SQcBvmEdRmvKrM70eAhCWgG8FnvWvJOq4cc+J9Ouf4QjNTKDhD7BlJ9k7ahuaoDvRGHsUW1qF1CpDnh8A2V9OCdPNpY7tghJE8mrG0pTu/gAYQpXVmB5gnxmX48MTCtc+LdguZYAGmuunYS56g/KdbziblQK8cAtXFhPORZ9JUuJ3SpihSvajY=
-  - secure: zvee3kpsn9j1ue4lZM/9jK0oxBytuhHdcry30fBZpDW22OpHfq27pKZ/UxiECWrozrQQYxBIDQl71kkYkTQwgyfO/qZ0Z5bq+lY/TBojS0zNJxUmyKd3NIkMfFp8KEKjYo/qNf3MyAn4GlXf22WPdsorWZWhJt3oXrj3UV5cBEE1YpfFtYPPY4ip2mSp9COig+GbHU74v6yMfrD1ra1SI5b7vXZSAxsnir7a9lMNLGPj4e6Q6Xug7ocdVvqgsmUgyFMRQNE6zrGWt+l+9AOe1kCoOq0x624CHrgWDZljkxVhRa3JJ/di2CIZfRRGx052ZW/1zGr+U0bcHFISqSU3+ZtptLQZ4He+lktOM8ZPtbwzeXvUVCTs8o6VUCzAHury73v2XK/eykdAcEm4htfiRN/h4ReVunpT4kYIzIOeYCMQYuKCM+3FpUKAOjvsHK5fm5WlABEW6OFcL9zXXM+P1DiPpXqxyiJqYxD8mePIam9R/VCPPDE0/dxt9WOX327xxmUA7c5N6D0/tc2Cm16l7aDyouaXdLGkgHLHQByAzkCHZ2WUIEr5zIJC/D4slN3LzAuf5vlICK2UC3I26+8d8SJZ2eejpbpgQO/PhgtpF1rNiIQ4wxpYLjiObs8RF9LiTWirNmI1D1ThBOrbSNgS3IYs9/QOvr5Q5+waN+42ano=
-  - secure: w4UkD0GevwWnKu09RAPYxeYQ+ztWoEYMFEZo++xYaJYCZFMzgABFwB80UE1kiu+OS+kfpWN+4qpnySPdeir2+JdIirH9Xowy+ClVHvp+7yQfK1kiBz4Wiqa8KCldAWQRUop+AJaOwfBTrxj3AntqdY+xq7Mfg7PbA9IVDgbBSoZAbScxSudSqaCnTe+wD9mdwC9TRMIEiJPq441NHjcKghe1fbOab5Oyr+futTY8nVLbHrJRuWhk69zrc5u/c52i7ZP2zvgfas61tzK1JmQFRwdj5ik/IqmlPTYYZbABfums+MS2ltY09Qc7Q88O6bfA75x9UEcT2sxN90EvDHBiv02c/CMx4SQLy/yqWB6Q4a3IxZXYRYKHzijSjNx47DINoKfrD1mbz4pJtHVOG0lqZeleyY+vD9XCRYB+uggOihQMrvufiuZc7D9oanpw+PukI02KwtNBdnTqRZ2ho44nAvkG6YVpBp0wt6pRm8LFLGwSyk2ypd6XQ9D1BL/JV3eEekKoFsznhsmzmLLvECHdVHdxiDz6mlRUAyTjRIsGQ/ejlHaJToi7f2kfrALv2IzzR+v+vBob8YQ3x8cgCO1jPGlSw8QI4Z5ALQvI92Z2ojp9LAVPMMtmberE/+fpAVHQWGuFxlIUT9t2eGjvKNIifTEwiIerk69HG+qPewAO254=
-before_install:
-  - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then openssl aes-256-cbc -k "$password" -in id_rsa.enc -out deploy_key -d; fi
-after_success:
-- cd $TRAVIS_BUILD_DIR/scripts
-- chmod 755 ghp.sh
-- "./ghp.sh"
+  - secure: hNibrfJybU3RX7L/VvhMzDHqPAzwR4jShECowNxsDc9TcvcUK2eMIVkLh4JJNAo58OH7jBtdctzRTIjyAnt1u3Gsla1s8+MGTYS0jxf2H4qvWj0IxCswBxZHjIT/zXZJNOocsiJfeVZ5B/wlA7t5eYy5PGz6mvmSFlLqIksiFo1kRcfWnaR6wnYS4XnJ+XOSOve/1hp63RexORrv2eHjHCLN9lF/vANDrOIZchAJzTZiWmLfMisaWycwtgpCzniDmn26cJubJagwKWd1PLBSbX1s6KFwZIxd120AiIWXuzhZUVsGA1ZvITY51KZFLpUnC8C7kVkx0iDfEzJ/MMenTcU+0s8VfYWEsAZaizBh4RXIBER1qFQqhd0T9Oi34daHDIGHEWJCZ7Fo4k0if809BxWtBPCUa2jCniLrqj3Rl62xtAPiM25oMQzChnSDHsFxHG//AU7k8RA/WHKQgT7dgqsfwEWxkkrOwE+JaK1IV6JywxJMbO7UYNCzWUO7Gp5LJ0tAdYEe2e1oqBeJch+KV4/t1FakHe5uGdfxPKHUd+eEypsbOyehNtB26J27xadu/8O6799EF+HyAW9GWELUgBf3o4qwHOK5A67Lp61ck1ENe3/yLUmcCHJpAKLBL/FRr+uOPMbOu7RZ5r2EE2WxKj8CaJ5xvV39HVq1XFepqls=
+  - secure: VS07rFx5qgPdrwNQ8xpQqGx1qXs6kPkIJOaa+76UmnJqVfDS+p5Gg45JdlR+9ZAieDj3Ba3TxRu7Q8ebozyjE4HBvVhQC1Y4ftA1DhKWVrsemZQyxdwIeutp1qvgyvwYkJILRfnexxek18DHkrM4J8f//qKlpUE8hvNdg09mqZXdB5ykAl+jW8NZ+XaCFCwGx/YGmdcxBpGQFXzMfHkORc+g4v9OZGLG/MRv9dIiyo1EPTKONjErmd7oJX6UUGEwMUh+6I/V78myVV6kInE9nosi88AXmrT9jMFiklOqFghVe58xl6MxpDWBcIrdNj3GvwiNbVf68qlWzykEomZGYWVc6bah4QYUCD21J3/bBlDWb1OUihriYMrujOKFQz7Kh8aS3KZ9l160/DfaRv2HCEYnQK+3mAywVVHXDpCA93Efj/hTpztJXAZTkhcCagG8bgSO78GJ9CZTAQdyWgvDhz9SD4F85NIjOHlBdL7GlP2qSErHMyf36qMsUltIjk97EVY/p8Elnvpz/FpeAJetJPqlJgVPUR0GoVeleOgv8JXR0nl91jnatnTCvTvjSO4vvKVU1BuJ/ScS7eaaKm/rLkyeX0KK/ymFQo/a6TJm3FscxFlioSWE57ebWTP52g1BNwd/gruXSt17p3vRLT4DoGCKkqsFfyGLZW5cuBM46/E=
