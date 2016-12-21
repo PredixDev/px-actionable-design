@@ -14,21 +14,14 @@ addons:
     packages:
     - google-chrome-stable
 before_script:
-- npm install web-component-tester
 - npm install bower
 - export PATH=$PWD/node_modules/.bin:$PATH
 - bower install
 script:
-- xvfb-run wct --skip-plugin sauce
-- if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then wct --plugin sauce --skip-plugin
-  local; fi
+- echo "This design module has no tests"
 after_success:
 - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then openssl aes-256-cbc -k "$DEPLOYSECRET"
   -in deploy.enc -out deploy_key -d; fi
 - cd $TRAVIS_BUILD_DIR/scripts
 - chmod 755 ghp.sh
 - "./ghp.sh"
-env:
-  global:
-  - secure: hNibrfJybU3RX7L/VvhMzDHqPAzwR4jShECowNxsDc9TcvcUK2eMIVkLh4JJNAo58OH7jBtdctzRTIjyAnt1u3Gsla1s8+MGTYS0jxf2H4qvWj0IxCswBxZHjIT/zXZJNOocsiJfeVZ5B/wlA7t5eYy5PGz6mvmSFlLqIksiFo1kRcfWnaR6wnYS4XnJ+XOSOve/1hp63RexORrv2eHjHCLN9lF/vANDrOIZchAJzTZiWmLfMisaWycwtgpCzniDmn26cJubJagwKWd1PLBSbX1s6KFwZIxd120AiIWXuzhZUVsGA1ZvITY51KZFLpUnC8C7kVkx0iDfEzJ/MMenTcU+0s8VfYWEsAZaizBh4RXIBER1qFQqhd0T9Oi34daHDIGHEWJCZ7Fo4k0if809BxWtBPCUa2jCniLrqj3Rl62xtAPiM25oMQzChnSDHsFxHG//AU7k8RA/WHKQgT7dgqsfwEWxkkrOwE+JaK1IV6JywxJMbO7UYNCzWUO7Gp5LJ0tAdYEe2e1oqBeJch+KV4/t1FakHe5uGdfxPKHUd+eEypsbOyehNtB26J27xadu/8O6799EF+HyAW9GWELUgBf3o4qwHOK5A67Lp61ck1ENe3/yLUmcCHJpAKLBL/FRr+uOPMbOu7RZ5r2EE2WxKj8CaJ5xvV39HVq1XFepqls=
-  - secure: VS07rFx5qgPdrwNQ8xpQqGx1qXs6kPkIJOaa+76UmnJqVfDS+p5Gg45JdlR+9ZAieDj3Ba3TxRu7Q8ebozyjE4HBvVhQC1Y4ftA1DhKWVrsemZQyxdwIeutp1qvgyvwYkJILRfnexxek18DHkrM4J8f//qKlpUE8hvNdg09mqZXdB5ykAl+jW8NZ+XaCFCwGx/YGmdcxBpGQFXzMfHkORc+g4v9OZGLG/MRv9dIiyo1EPTKONjErmd7oJX6UUGEwMUh+6I/V78myVV6kInE9nosi88AXmrT9jMFiklOqFghVe58xl6MxpDWBcIrdNj3GvwiNbVf68qlWzykEomZGYWVc6bah4QYUCD21J3/bBlDWb1OUihriYMrujOKFQz7Kh8aS3KZ9l160/DfaRv2HCEYnQK+3mAywVVHXDpCA93Efj/hTpztJXAZTkhcCagG8bgSO78GJ9CZTAQdyWgvDhz9SD4F85NIjOHlBdL7GlP2qSErHMyf36qMsUltIjk97EVY/p8Elnvpz/FpeAJetJPqlJgVPUR0GoVeleOgv8JXR0nl91jnatnTCvTvjSO4vvKVU1BuJ/ScS7eaaKm/rLkyeX0KK/ymFQo/a6TJm3FscxFlioSWE57ebWTP52g1BNwd/gruXSt17p3vRLT4DoGCKkqsFfyGLZW5cuBM46/E=
