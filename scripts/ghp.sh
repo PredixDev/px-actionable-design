@@ -94,7 +94,7 @@ perl -pi -w -e 's/px-theme\/px-theme-styles.html/px-dark-theme\/px-dark-theme-st
 cd ../
 
 # Do the git stuff
-git add .
+git add -A .
 git commit -m "${GIT_COMMIT_MESSAGE}"
 
 # Set git credentials (defined in settings above)
