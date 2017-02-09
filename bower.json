@@ -1,6 +1,6 @@
 {
   "name": "px-actionable-text-icons-design",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "authors": [
     "General Electric"
   ],
@@ -26,7 +26,8 @@
     "monogram-wdmk.png",
     "wct.conf.json",
     "test",
-    "OSS_Notice.pdf"
+    "OSS_Notice.pdf",
+    "*.png"
   ],
   "dependencies": {
     "px-colors-design": "^0.3.0",

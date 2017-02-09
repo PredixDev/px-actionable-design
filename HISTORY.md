@@ -1,3 +1,7 @@
+v1.1.7
+==================
+* add `*.png` to bower ignore 
+
 v1.1.6
 ==================
 * removing old files
@@ -19,7 +23,7 @@ v1.1.2
 * updated px-colors-design version
 v1.1.1
 ==================
-* Update missed design depndencies
+* Update missed design dependencies
 
 v1.1.0
 ==================
