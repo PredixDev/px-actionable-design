@@ -25,7 +25,8 @@
     "gulpfile.js",
     "monogram-wdmk.png",
     "wct.conf.json",
-    "test"
+    "test",
+    "OSS_Notice.pdf"
   ],
   "dependencies": {
     "px-colors-design": "^0.3.0",

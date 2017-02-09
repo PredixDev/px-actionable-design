@@ -1,4 +1,3 @@
-
 <!-- Common imports -->
 <link rel="import" href="../../polymer/polymer.html" />
 
@@ -122,6 +121,7 @@ id="test"
     },
 
     _handleOptionsUpdated : function(evt) {
+      //call functions created below
       this.cssClasses = this._calcCssClasses();
       this.importCode = this._importCode();
 
@@ -129,26 +129,26 @@ id="test"
       this.async(function(){ this.fire('px-sass-doc-demo-updated', {}) }, 10);
     },
 
-  _calcCssClasses : function() {
-    var opts = this.selectedOptions || {}, strings = [];
+    _calcCssClasses : function() {
+      var opts = this.selectedOptions || {}, strings = [];
 
-    if (opts.Size === "small")    strings.push("actionable--small");
-    if (opts.Size === "large")    strings.push("actionable--large");
-    if (opts.Size === "huge")     strings.push("actionable--huge");
+      if (opts.Size === "small")    strings.push("actionable--small");
+      if (opts.Size === "large")    strings.push("actionable--large");
+      if (opts.Size === "huge")     strings.push("actionable--huge");
 
-    if (opts.Type === "select")    strings.push("actionable--select");
-    if (opts.Type === "action")    strings.push("actionable--action");
+      if (opts.Type === "select")    strings.push("actionable--select");
+      if (opts.Type === "action")    strings.push("actionable--action");
 
-    if (opts.Disabled === true)    strings.push("actionable--disabled");
+      if (opts.Disabled === true)    strings.push("actionable--disabled");
 
-    return ("actionable " + strings.join(" ")).trim();
-  },
+      return ("actionable " + strings.join(" ")).trim();
+    },
 
-  _importCode : function() {
-    var opts = this.selectedOptions || {}, strings = [];
+    _importCode : function() {
+      var opts = this.selectedOptions || {}, strings = [];
 
-    return (strings.join("\n") + "\n@import 'px-actionable-text-icons-design/_objects.actionable.scss';").trim();
-  },
+      return (strings.join("\n") + "\n@import 'px-actionable-text-icons-design/_objects.actionable.scss';").trim();
+    },
 
   });
 </script>
