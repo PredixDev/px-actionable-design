@@ -1,6 +1,10 @@
+v1.1.8
+==================
+* add CONTRIBUTING.md and LICENSE.md to bower ignore 
+
 v1.1.7
 ==================
-* add `*.png` to bower ignore 
+* add `*.png` to bower ignore
 
 v1.1.6
 ==================

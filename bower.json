@@ -1,6 +1,6 @@
 {
   "name": "px-actionable-text-icons-design",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "authors": [
     "General Electric"
   ],
@@ -27,7 +27,9 @@
     "wct.conf.json",
     "test",
     "OSS_Notice.pdf",
-    "*.png"
+    "*.png",
+    "CONTRIBUTING.md",
+    "LICENSE.md"
   ],
   "dependencies": {
     "px-colors-design": "^0.3.0",
