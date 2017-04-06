@@ -25,13 +25,13 @@
   &:visited,
   &:active,
   &:focus {
-    color: var(--px-actionable-text-color, $primary-blue);
+    color: var(--px-actionable-text-color, $primary-default);
   }
   &:hover{
-    color: var(--px-actionable-text-color--hover, $primary-blue-hover);
+    color: var(--px-actionable-text-color--hover, $primary-hover);
   }
   &:active {
-    color: var(--px-actionable-text-color--active, $primary-blue-pressed);
+    color: var(--px-actionable-text-color--active, $primary-pressed);
   }
 }
 
@@ -41,13 +41,13 @@
   &:visited,
   &:active,
   &:focus {
-    color: var(--px-selectable-text-color, $select-blue-default);
+    color: var(--px-selectable-text-color, $select-default);
   }
   &:hover{
-    color: var(--px-selectable-text-color--hover, $select-blue-hover);
+    color: var(--px-selectable-text-color--hover, $select-hover);
   }
   &:active {
-      color: var(--px-selectable-text-color--active, $select-blue-pressed);
+      color: var(--px-selectable-text-color--active, $select-pressed);
     }
   }
 
@@ -60,10 +60,10 @@
     color: var(--px-actionable-alt-text-color, $gray8);
   }
   &:hover{
-    color: var(--px-actionable-alt-text-color--hover, $primary-blue);
+    color: var(--px-actionable-alt-text-color--hover, $primary-default);
   }
   &:active {
-      color: var(--px-actionable-alt-text-color--active, $primary-blue-pressed);
+      color: var(--px-actionable-alt-text-color--active, $primary-pressed);
     }
   }
 

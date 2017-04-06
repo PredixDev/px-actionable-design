@@ -1,6 +1,10 @@
+v2.0.0
+==================
+* release with the redesigned Predix UI color palette
+
 v1.1.8
 ==================
-* add CONTRIBUTING.md and LICENSE.md to bower ignore 
+* add CONTRIBUTING.md and LICENSE.md to bower ignore
 
 v1.1.7
 ==================
