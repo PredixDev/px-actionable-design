@@ -32,8 +32,8 @@
     "LICENSE.md"
   ],
   "dependencies": {
-    "px-colors-design": "^1.0.1",
-    "px-defaults-design": "^1.0.5"
+    "px-colors-design": "^1.0.0",
+    "px-defaults-design": "^1.0.0"
   },
   "devDependencies": {
     "px-starter-kit-design": "^0.7.4",
