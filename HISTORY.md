@@ -1,6 +1,7 @@
 v2.0.0
 ==================
 * release with the redesigned Predix UI color palette
+* converted the 'action' class to 'secondary'
 
 v1.1.8
 ==================

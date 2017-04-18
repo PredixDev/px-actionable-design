@@ -51,13 +51,14 @@
     }
   }
 
-.actionable--action{
+.actionable--action,
+.actionable--secondary{
   &,
   &:link,
   &:visited,
   &:active,
   &:focus {
-    color: var(--px-actionable-alt-text-color, $gray8);
+    color: var(--px-actionable-alt-text-color, $gray15);
   }
   &:hover{
     color: var(--px-actionable-alt-text-color--hover, $primary-default);
