@@ -7,6 +7,67 @@
 @import "px-defaults-design/_settings.defaults.scss";
 @import "px-colors-design/_settings.colors.scss";
 
+/// Text color
+///
+/// @group px-actionable-text-icons-design:variables:style
+/// @type Color [default]
+$inuit-actionable-text-color    : var(--px-actionable-text-color, $primary-default);
+
+/// Hover text color
+///
+/// @group px-actionable-text-icons-design:variables:style
+/// @type Color [default]
+$inuit-actionable-text-color--hover   : var(--px-actionable-text-color--hover, $primary-hover);
+
+/// Pressed text color
+///
+/// @group px-actionable-text-icons-design:variables:style
+/// @type Color [default]
+$inuit-actionable-text-color--active   : var(--px-actionable-text-color--active, $primary-pressed);
+
+/// Select text color
+///
+/// @group px-actionable-text-icons-design:variables:style
+/// @type Color [default]
+$inuit-selectable-text-color   : var(--px-selectable-text-color, $select-default);
+
+/// Select hover text color
+///
+/// @group px-actionable-text-icons-design:variables:style
+/// @type Color [default]
+$inuit-selectable-text-color--hover   : var(--px-selectable-text-color--hover, $select-hover);
+
+/// Select pressed text color
+///
+/// @group px-actionable-text-icons-design:variables:style
+/// @type Color [default]
+$inuit-selectable-text-color--active   : var(--px-selectable-text-color--active, $select-pressed);
+
+/// Secondary text color
+///
+/// @group px-actionable-text-icons-design:variables:style
+/// @type Color [default]
+$inuit-actionable-alt-text-color   : var(--px-actionable-alt-text-color, $gray15);
+
+/// Secondary hover text color
+///
+/// @group px-actionable-text-icons-design:variables:style
+/// @type Color [default]
+$inuit-actionable-alt-text-color--hover   : var(--px-actionable-alt-text-color--hover, $primary-default);
+
+/// Secondary pressed text color
+///
+/// @group px-actionable-text-icons-design:variables:style
+/// @type Color [default]
+$inuit-actionable-alt-text-color--active   : var(--px-actionable-alt-text-color--active, $primary-pressed);
+
+/// Disabled text color
+///
+/// @group px-actionable-text-icons-design:variables:style
+/// @type Color [default]
+$inuit-disabled-text-color   : var(--px-disabled-text-color, $gray4);
+
+
 .actionable{
   height: auto;
   border: 0;
@@ -25,13 +86,13 @@
   &:visited,
   &:active,
   &:focus {
-    color: var(--px-actionable-text-color, $primary-default);
+    color: $inuit-actionable-text-color;
   }
   &:hover{
-    color: var(--px-actionable-text-color--hover, $primary-hover);
+    color: $inuit-actionable-text-color--hover;
   }
   &:active {
-    color: var(--px-actionable-text-color--active, $primary-pressed);
+    color: $inuit-actionable-text-color--active;
   }
 }
 
@@ -41,13 +102,13 @@
   &:visited,
   &:active,
   &:focus {
-    color: var(--px-selectable-text-color, $select-default);
+    color: $inuit-selectable-text-color;
   }
   &:hover{
-    color: var(--px-selectable-text-color--hover, $select-hover);
+    color: $inuit-selectable-text-color--hover;
   }
   &:active {
-      color: var(--px-selectable-text-color--active, $select-pressed);
+      color: $inuit-selectable-text-color--active;
     }
   }
 
@@ -58,13 +119,13 @@
   &:visited,
   &:active,
   &:focus {
-    color: var(--px-actionable-alt-text-color, $gray15);
+    color: $inuit-actionable-alt-text-color;
   }
   &:hover{
-    color: var(--px-actionable-alt-text-color--hover, $primary-default);
+    color: $inuit-actionable-alt-text-color--hover;
   }
   &:active {
-      color: var(--px-actionable-alt-text-color--active, $primary-pressed);
+      color: $inuit-actionable-alt-text-color--active;
     }
   }
 
@@ -76,7 +137,7 @@
     &:hover,
     &:active {
       cursor: not-allowed;
-      color: var(--px-disabled-text-color, $gray4);
+      color: $inuit-disabled-text-color;
     }
   }
 

@@ -1,1 +1,262 @@
-[]
+[
+    {
+        "description": "Text color\n\n",
+        "commentRange": {
+            "start": 10,
+            "end": 13
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-actionable-text-color",
+            "value": "var(--px-actionable-text-color, $primary-default)",
+            "scope": "private",
+            "line": {
+                "start": 14,
+                "end": 14
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Hover text color\n\n",
+        "commentRange": {
+            "start": 16,
+            "end": 19
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-actionable-text-color--hover",
+            "value": "var(--px-actionable-text-color--hover, $primary-hover)",
+            "scope": "private",
+            "line": {
+                "start": 20,
+                "end": 20
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Pressed text color\n\n",
+        "commentRange": {
+            "start": 22,
+            "end": 25
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-actionable-text-color--active",
+            "value": "var(--px-actionable-text-color--active, $primary-pressed)",
+            "scope": "private",
+            "line": {
+                "start": 26,
+                "end": 26
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Select text color\n\n",
+        "commentRange": {
+            "start": 28,
+            "end": 31
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-selectable-text-color",
+            "value": "var(--px-selectable-text-color, $select-default)",
+            "scope": "private",
+            "line": {
+                "start": 32,
+                "end": 32
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Select hover text color\n\n",
+        "commentRange": {
+            "start": 34,
+            "end": 37
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-selectable-text-color--hover",
+            "value": "var(--px-selectable-text-color--hover, $select-hover)",
+            "scope": "private",
+            "line": {
+                "start": 38,
+                "end": 38
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Select pressed text color\n\n",
+        "commentRange": {
+            "start": 40,
+            "end": 43
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-selectable-text-color--active",
+            "value": "var(--px-selectable-text-color--active, $select-pressed)",
+            "scope": "private",
+            "line": {
+                "start": 44,
+                "end": 44
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Secondary text color\n\n",
+        "commentRange": {
+            "start": 46,
+            "end": 49
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-actionable-alt-text-color",
+            "value": "var(--px-actionable-alt-text-color, $gray15)",
+            "scope": "private",
+            "line": {
+                "start": 50,
+                "end": 50
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Secondary hover text color\n\n",
+        "commentRange": {
+            "start": 52,
+            "end": 55
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-actionable-alt-text-color--hover",
+            "value": "var(--px-actionable-alt-text-color--hover, $primary-default)",
+            "scope": "private",
+            "line": {
+                "start": 56,
+                "end": 56
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Secondary pressed text color\n\n",
+        "commentRange": {
+            "start": 58,
+            "end": 61
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-actionable-alt-text-color--active",
+            "value": "var(--px-actionable-alt-text-color--active, $primary-pressed)",
+            "scope": "private",
+            "line": {
+                "start": 62,
+                "end": 62
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    },
+    {
+        "description": "Disabled text color\n\n",
+        "commentRange": {
+            "start": 64,
+            "end": 67
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-disabled-text-color",
+            "value": "var(--px-disabled-text-color, $gray4)",
+            "scope": "private",
+            "line": {
+                "start": 68,
+                "end": 68
+            }
+        },
+        "group": [
+            "px-actionable-text-icons-design:variables:style"
+        ],
+        "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_objects.actionable.scss",
+            "name": "_objects.actionable.scss"
+        }
+    }
+]
