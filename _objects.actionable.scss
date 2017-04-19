@@ -65,7 +65,7 @@ $inuit-actionable-alt-text-color--active   : var(--px-actionable-alt-text-color-
 ///
 /// @group px-actionable-text-icons-design:variables:style
 /// @type Color [default]
-$inuit-disabled-text-color   : var(--px-disabled-text-color, $gray4);
+$inuit-actionable-disabled-text-color   : var(--px-actionable-disabled-text-color, rgba($black, 0.3));
 
 
 .actionable{
@@ -137,7 +137,7 @@ $inuit-disabled-text-color   : var(--px-disabled-text-color, $gray4);
     &:hover,
     &:active {
       cursor: not-allowed;
-      color: $inuit-disabled-text-color;
+      color: $inuit-actionable-disabled-text-color;
     }
   }
 
