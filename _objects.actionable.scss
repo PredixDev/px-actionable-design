@@ -81,12 +81,14 @@ $inuit-actionable-disabled-text-color   : var(--px-actionable-disabled-text-colo
   font: inherit;
   -webkit-font-smoothing: antialiased;
   cursor: pointer;
+  outline:none;
   &,
   &:link,
   &:visited,
   &:active,
   &:focus {
     color: $inuit-actionable-text-color;
+    outline:inherit;
   }
   &:hover{
     color: $inuit-actionable-text-color--hover;
