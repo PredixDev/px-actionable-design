@@ -1,5 +1,6 @@
 v2.0.0
 ==================
+* renamed repo to px-actionable-design
 * release with the redesigned Predix UI color palette
 * converted the 'action' class to 'secondary'
 

@@ -3,17 +3,17 @@
 
   <!-- Common demo imports -->
   <link rel="import" href="../../px-sass-doc/px-sass-doc.html" />
-  <link rel="import" href="../css/px-actionable-text-icons-design-demo-styles.html" />
+  <link rel="import" href="../css/px-actionable-design-demo-styles.html" />
 
 <!-- Demo DOM module -->
 <dom-module id="local-element-demo">
   <template>
   <!-- 0: Import the styles-->
-  <style include="px-actionable-text-icons-design-demo-styles" is="custom-style"></style>
+  <style include="px-actionable-design-demo-styles" is="custom-style"></style>
 
 <!-- 1: Describe Module -->
 <px-sass-doc
-  module-name="px-actionable-text-icons-design"
+  module-name="px-actionable-design"
   description="Predix UI Actionable Text and Icons module is a simple implementation of added button type behaviors to text. Actionable text allows the user to initiate an secondary action associated to the text string."
   layer="objects"
   sassdoc-path="sassdoc.json"
@@ -146,7 +146,7 @@
     _importCode : function() {
       var opts = this.selectedOptions || {}, strings = [];
 
-      return (strings.join("\n") + "\n@import 'px-actionable-text-icons-design/_objects.actionable.scss';").trim();
+      return (strings.join("\n") + "\n@import 'px-actionable-design/_objects.actionable.scss';").trim();
     },
 
   });

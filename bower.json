@@ -1,5 +1,5 @@
 {
-  "name": "px-actionable-text-icons-design",
+  "name": "px-actionable-design",
   "version": "2.0.0",
   "authors": [
     "General Electric"
@@ -12,7 +12,7 @@
     "actionable text",
     "actionable icons"
   ],
-  "homepage": "https://github.com/predixdev/px-actionable-text-icons-design.git",
+  "homepage": "https://github.com/predixdev/px-actionable-design.git",
   "private": false,
   "ignore": [
     "*.enc",

@@ -1,5 +1,5 @@
 {
-    "name": "px-actionable-text-icons-design",
+    "name": "px-actionable-design",
     "version": "2.0.0",
     "description": "Actionable Text and Icon styles for Predix Experience",
     "private": false,
@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/predixdev/px-actionable-text-icons-design.git"
+        "url": "https://github.com/predixdev/px-actionable-design.git"
     },
     "author": "General Electric",
     "dependencies": {

@@ -16,7 +16,7 @@
             }
         },
         "group": [
-            "px-actionable-text-icons-design:variables:style"
+            "px-actionable-design:variables:style"
         ],
         "type": "Color [default]",
         "access": "public",
@@ -42,7 +42,7 @@
             }
         },
         "group": [
-            "px-actionable-text-icons-design:variables:style"
+            "px-actionable-design:variables:style"
         ],
         "type": "Color [default]",
         "access": "public",
@@ -68,7 +68,7 @@
             }
         },
         "group": [
-            "px-actionable-text-icons-design:variables:style"
+            "px-actionable-design:variables:style"
         ],
         "type": "Color [default]",
         "access": "public",
@@ -94,7 +94,7 @@
             }
         },
         "group": [
-            "px-actionable-text-icons-design:variables:style"
+            "px-actionable-design:variables:style"
         ],
         "type": "Color [default]",
         "access": "public",
@@ -120,7 +120,7 @@
             }
         },
         "group": [
-            "px-actionable-text-icons-design:variables:style"
+            "px-actionable-design:variables:style"
         ],
         "type": "Color [default]",
         "access": "public",
@@ -146,7 +146,7 @@
             }
         },
         "group": [
-            "px-actionable-text-icons-design:variables:style"
+            "px-actionable-design:variables:style"
         ],
         "type": "Color [default]",
         "access": "public",
@@ -172,7 +172,7 @@
             }
         },
         "group": [
-            "px-actionable-text-icons-design:variables:style"
+            "px-actionable-design:variables:style"
         ],
         "type": "Color [default]",
         "access": "public",
@@ -198,7 +198,7 @@
             }
         },
         "group": [
-            "px-actionable-text-icons-design:variables:style"
+            "px-actionable-design:variables:style"
         ],
         "type": "Color [default]",
         "access": "public",
@@ -224,7 +224,7 @@
             }
         },
         "group": [
-            "px-actionable-text-icons-design:variables:style"
+            "px-actionable-design:variables:style"
         ],
         "type": "Color [default]",
         "access": "public",
@@ -241,8 +241,8 @@
         },
         "context": {
             "type": "variable",
-            "name": "inuit-disabled-text-color",
-            "value": "var(--px-disabled-text-color, $gray4)",
+            "name": "inuit-actionable-disabled-text-color",
+            "value": "var(--px-actionable-disabled-text-color, rgba($black, 0.3))",
             "scope": "private",
             "line": {
                 "start": 68,
@@ -250,7 +250,7 @@
             }
         },
         "group": [
-            "px-actionable-text-icons-design:variables:style"
+            "px-actionable-design:variables:style"
         ],
         "type": "Color [default]",
         "access": "public",

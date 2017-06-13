@@ -15,23 +15,23 @@ Px's Actionable Text &#38; Icons module depends on two other Px modules:
 
 Install this module and its dependencies using bower:
 
-    bower install --save px-actionable-text-icons-design
+    bower install --save px-actionable-design
 
 Once installed, `@import` into your project's Sass file in its Objects layer:
 
-    @import "px-actionable-text-icons-design/_objects.actionable.scss";
+    @import "px-actionable-design/_objects.actionable.scss";
 
 ## Usage
 
 These flags are available and, if needed, should be set to `true` prior to importing the module:
 
-    $actionable  
-    $actionable--select  
-    $actionable--action  
-    $actionable--disabled  
-    $actionable--small  
-    $actionable--large  
-    $actionable--huge  
+    $actionable
+    $actionable--select
+    $actionable--action
+    $actionable--disabled
+    $actionable--small
+    $actionable--large
+    $actionable--huge
 
 ## Options
 
@@ -40,4 +40,4 @@ These classes are available if the variable flags listed above are set to `true`
 * `actionable--[small|large|huge]`: Small, large or huge Actionable Text &#38; Icons
 * `actionable--[select|action|disabled]`: select, action, or disabled Actionable Text &#38; Icons
 
-Please view the full API [here](http://predixdev.github.io/px-actionable-text-icons-design/)
+Please view the full API [here](http://predixdev.github.io/px-actionable-design/)
