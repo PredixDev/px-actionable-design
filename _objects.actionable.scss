@@ -11,60 +11,70 @@
 ///
 /// @group px-actionable-design:variables:style
 /// @type Color [default]
+/// @todo --px-actionable-text-color
 $inuit-actionable-text-color    : var(--px-actionable-text-color, $primary-default);
 
 /// Hover text color
 ///
 /// @group px-actionable-design:variables:style
 /// @type Color [default]
+/// @todo --px-actionable-text-color--hover
 $inuit-actionable-text-color--hover   : var(--px-actionable-text-color--hover, $primary-hover);
 
 /// Pressed text color
 ///
 /// @group px-actionable-design:variables:style
 /// @type Color [default]
+/// @todo --px-actionable-text-color--active
 $inuit-actionable-text-color--active   : var(--px-actionable-text-color--active, $primary-pressed);
 
 /// Select text color
 ///
 /// @group px-actionable-design:variables:style
 /// @type Color [default]
+/// @todo --px-selectable-text-color
 $inuit-selectable-text-color   : var(--px-selectable-text-color, $select-default);
 
 /// Select hover text color
 ///
 /// @group px-actionable-design:variables:style
 /// @type Color [default]
+/// @todo --px-selectable-text-color--hover
 $inuit-selectable-text-color--hover   : var(--px-selectable-text-color--hover, $select-hover);
 
 /// Select pressed text color
 ///
 /// @group px-actionable-design:variables:style
 /// @type Color [default]
+/// @todo --px-selectable-text-color--active
 $inuit-selectable-text-color--active   : var(--px-selectable-text-color--active, $select-pressed);
 
 /// Secondary text color
 ///
 /// @group px-actionable-design:variables:style
 /// @type Color [default]
+/// @todo --px-actionable-alt-text-color
 $inuit-actionable-alt-text-color   : var(--px-actionable-alt-text-color, $gray15);
 
 /// Secondary hover text color
 ///
 /// @group px-actionable-design:variables:style
 /// @type Color [default]
+/// @todo --px-actionable-alt-text-color--hover
 $inuit-actionable-alt-text-color--hover   : var(--px-actionable-alt-text-color--hover, $primary-default);
 
 /// Secondary pressed text color
 ///
 /// @group px-actionable-design:variables:style
 /// @type Color [default]
+/// @todo --px-actionable-alt-text-color--active
 $inuit-actionable-alt-text-color--active   : var(--px-actionable-alt-text-color--active, $primary-pressed);
 
 /// Disabled text color
 ///
 /// @group px-actionable-design:variables:style
 /// @type Color [default]
+/// @todo --px-actionable-disabled-text-color
 $inuit-actionable-disabled-text-color   : var(--px-actionable-disabled-text-color, rgba($black, 0.3));
 
 
@@ -79,7 +89,7 @@ $inuit-actionable-disabled-text-color   : var(--px-actionable-disabled-text-colo
   line-height: inherit;
   text-decoration: none;
   font: inherit;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antitodoed;
   cursor: pointer;
   outline: none;
   transition: color .4s;
