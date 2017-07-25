@@ -1,11 +1,11 @@
-# Actionable Text &#38; Icons
+# px-actionable-design
 
-Predix UI Actionable Text &#38; Icons module is used to initiate an action associated to the text string or icon.
+The Predix UI Actionable module is used to initiate an action associated to the text string or icon.
 
 
 ## Dependencies
 
-Px's Actionable Text &#38; Icons module depends on two other Px modules:
+The `px-actionable-design` module depends on two other Px modules:
 
 * [px-colors-design](https://github.com/PredixDev/px-colors-design)
 * [px-defaults-design](https://github.com/PredixDev/px-defaults-design)
