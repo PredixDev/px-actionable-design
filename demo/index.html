@@ -1,9 +1,11 @@
 <!-- Common imports -->
 <link rel="import" href="../../polymer/polymer.html" />
 
-  <!-- Common demo imports -->
-  <link rel="import" href="../../px-sass-doc/px-sass-doc.html" />
-  <link rel="import" href="../css/px-actionable-design-demo-styles.html" />
+<!-- Common demo imports -->
+<link rel="import" href="../../px-sass-doc/px-sass-doc.html" />
+<link rel="import" href="../css/px-actionable-design-demo-styles.html" />
+<link rel="import" href="../px-icon-set/px-icon-set.html"/>
+<link rel="import" href="../px-icon-set/px-icon.html"/>
 
 <!-- Demo DOM module -->
 <dom-module id="local-element-demo">
@@ -14,7 +16,7 @@
 <!-- 1: Describe Module -->
 <px-sass-doc
   module-name="px-actionable-design"
-  description="Predix UI Actionable Text and Icons module is a simple implementation of added button type behaviors to text. Actionable text allows the user to initiate an secondary action associated to the text string."
+  description="Predix UI Actionable module is a simple implementation of added button type behaviors to text. Actionable text allows the user to initiate an secondary action associated to the text string."
   layer="objects"
   sassdoc-path="sassdoc.json"
   dependencies='[
@@ -55,7 +57,7 @@
 <section data-slot="demoHTML">
 <a class$="{{cssClasses}}">Actionable Text</a>
 <p class$="{{cssClasses}}">
-  <i class="fa fa-area-chart"></i>
+  <px-icon icon="px-fea:analysis"></px-icon>
 </p>
 </section>
 
@@ -70,7 +72,7 @@
 <!-- Default Actionable Text & Icon -->
 <span class="actionable">…</span>
 <span class="actionable">
-  <i class="fa fa-…"></i>
+  <px-icon icon="px-fea:analysis"></px-icon>
 </span>
 
 
