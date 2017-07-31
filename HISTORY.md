@@ -1,3 +1,7 @@
+v2.0.1
+==================
+* update demo to use px-icon
+
 v2.0.0
 ==================
 * renamed repo to px-actionable-design
