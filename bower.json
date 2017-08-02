@@ -30,7 +30,9 @@
     "OSS_Notice.pdf",
     "*.png",
     "CONTRIBUTING.md",
-    "LICENSE.md"
+    "LICENSE.md",
+    "package.json",
+    "yarn.lock"
   ],
   "dependencies": {
     "px-colors-design": "^1.0.0",
