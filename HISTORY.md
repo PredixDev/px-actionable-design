@@ -1,3 +1,7 @@
+v2.0.2
+==================
+* update demo to use unique name
+
 v2.0.1
 ==================
 * update demo to use px-icon

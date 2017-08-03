@@ -8,7 +8,7 @@
 <link rel="import" href="../px-icon-set/px-icon.html"/>
 
 <!-- Demo DOM module -->
-<dom-module id="local-element-demo">
+<dom-module id="px-actionable-design-demo">
   <template>
   <!-- 0: Import the styles-->
   <style include="px-actionable-design-demo-styles" is="custom-style"></style>
@@ -110,7 +110,7 @@
 <!-- 6: Handle selectedOptions, update demo -->
 <script>
   Polymer({
-    is: 'local-element-demo',
+    is: 'px-actionable-design-demo',
 
     attached : function(){
       var boundHandler = this._handleOptionsUpdated.bind(this);
