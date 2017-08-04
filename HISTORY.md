@@ -1,3 +1,7 @@
+v2.0.3
+==================
+* fix import bug in demo
+
 v2.0.2
 ==================
 * update demo to use unique name
