@@ -2,8 +2,8 @@
     {
         "description": "Text color\n\n",
         "commentRange": {
-            "start": 10,
-            "end": 14
+            "start": 26,
+            "end": 30
         },
         "context": {
             "type": "variable",
@@ -11,8 +11,8 @@
             "value": "var(--px-actionable-text-color, $primary-default)",
             "scope": "private",
             "line": {
-                "start": 15,
-                "end": 15
+                "start": 31,
+                "end": 31
             }
         },
         "group": [
@@ -31,8 +31,8 @@
     {
         "description": "Hover text color\n\n",
         "commentRange": {
-            "start": 17,
-            "end": 21
+            "start": 33,
+            "end": 37
         },
         "context": {
             "type": "variable",
@@ -40,8 +40,8 @@
             "value": "var(--px-actionable-text-color--hover, $primary-hover)",
             "scope": "private",
             "line": {
-                "start": 22,
-                "end": 22
+                "start": 38,
+                "end": 38
             }
         },
         "group": [
@@ -60,8 +60,8 @@
     {
         "description": "Pressed text color\n\n",
         "commentRange": {
-            "start": 24,
-            "end": 28
+            "start": 40,
+            "end": 44
         },
         "context": {
             "type": "variable",
@@ -69,8 +69,8 @@
             "value": "var(--px-actionable-text-color--active, $primary-pressed)",
             "scope": "private",
             "line": {
-                "start": 29,
-                "end": 29
+                "start": 45,
+                "end": 45
             }
         },
         "group": [
@@ -89,8 +89,8 @@
     {
         "description": "Select text color\n\n",
         "commentRange": {
-            "start": 31,
-            "end": 35
+            "start": 47,
+            "end": 51
         },
         "context": {
             "type": "variable",
@@ -98,8 +98,8 @@
             "value": "var(--px-selectable-text-color, $select-default)",
             "scope": "private",
             "line": {
-                "start": 36,
-                "end": 36
+                "start": 52,
+                "end": 52
             }
         },
         "group": [
@@ -118,8 +118,8 @@
     {
         "description": "Select hover text color\n\n",
         "commentRange": {
-            "start": 38,
-            "end": 42
+            "start": 54,
+            "end": 58
         },
         "context": {
             "type": "variable",
@@ -127,8 +127,8 @@
             "value": "var(--px-selectable-text-color--hover, $select-hover)",
             "scope": "private",
             "line": {
-                "start": 43,
-                "end": 43
+                "start": 59,
+                "end": 59
             }
         },
         "group": [
@@ -147,8 +147,8 @@
     {
         "description": "Select pressed text color\n\n",
         "commentRange": {
-            "start": 45,
-            "end": 49
+            "start": 61,
+            "end": 65
         },
         "context": {
             "type": "variable",
@@ -156,8 +156,8 @@
             "value": "var(--px-selectable-text-color--active, $select-pressed)",
             "scope": "private",
             "line": {
-                "start": 50,
-                "end": 50
+                "start": 66,
+                "end": 66
             }
         },
         "group": [
@@ -176,8 +176,8 @@
     {
         "description": "Secondary text color\n\n",
         "commentRange": {
-            "start": 52,
-            "end": 56
+            "start": 68,
+            "end": 72
         },
         "context": {
             "type": "variable",
@@ -185,8 +185,8 @@
             "value": "var(--px-actionable-alt-text-color, $gray15)",
             "scope": "private",
             "line": {
-                "start": 57,
-                "end": 57
+                "start": 73,
+                "end": 73
             }
         },
         "group": [
@@ -205,8 +205,8 @@
     {
         "description": "Secondary hover text color\n\n",
         "commentRange": {
-            "start": 59,
-            "end": 63
+            "start": 75,
+            "end": 79
         },
         "context": {
             "type": "variable",
@@ -214,8 +214,8 @@
             "value": "var(--px-actionable-alt-text-color--hover, $primary-default)",
             "scope": "private",
             "line": {
-                "start": 64,
-                "end": 64
+                "start": 80,
+                "end": 80
             }
         },
         "group": [
@@ -234,8 +234,8 @@
     {
         "description": "Secondary pressed text color\n\n",
         "commentRange": {
-            "start": 66,
-            "end": 70
+            "start": 82,
+            "end": 86
         },
         "context": {
             "type": "variable",
@@ -243,8 +243,8 @@
             "value": "var(--px-actionable-alt-text-color--active, $primary-pressed)",
             "scope": "private",
             "line": {
-                "start": 71,
-                "end": 71
+                "start": 87,
+                "end": 87
             }
         },
         "group": [
@@ -263,8 +263,8 @@
     {
         "description": "Disabled text color\n\n",
         "commentRange": {
-            "start": 73,
-            "end": 77
+            "start": 89,
+            "end": 93
         },
         "context": {
             "type": "variable",
@@ -272,8 +272,8 @@
             "value": "var(--px-actionable-disabled-text-color, rgba($black, 0.3))",
             "scope": "private",
             "line": {
-                "start": 78,
-                "end": 78
+                "start": 94,
+                "end": 94
             }
         },
         "group": [
