@@ -21,7 +21,7 @@ const gulp = require('gulp');
 const pkg = require('./package.json');
 const $ = require('gulp-load-plugins')();
 const gulpSequence = require('gulp-sequence');
-const importOnce = require('node-sass-import-once');
+const packageImporter = require('node-sass-package-importer');
 const stylemod = require('gulp-style-modules');
 const browserSync = require('browser-sync').create();
 const gulpif = require('gulp-if');
@@ -32,13 +32,24 @@ const sassdoc = require('sassdoc');
 const fs = require('fs');
 const { ensureLicense } = require('ensure-px-license');
 
-const sassOptions = {
-  importer: importOnce,
-  importOnce: {
-    index: true,
-    bower: true
-  }
+const options = {
+  cwd: process.cwd(),
+  packageKeys: [
+    "predixdesignsystem",
+    "sass",
+    "scss",
+    "style",
+    "css",
+    "index.sass",
+    "index.scss",
+    "index"
+  ],
+  packagePrefix: ''
 }
+
+const sassOptions = {
+  importer: packageImporter(options)
+};
 
 gulp.task('clean', function() {
   return gulp.src(['.tmp', 'css'], { read: false })
